@@ -1,0 +1,145 @@
+*,
+
+:root{
+    --primary1:hsl(180, 71%, 3%);
+    --white:hsl(0, 0%, 100%);
+}
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Raleway', sans-serif;
+}
+h1, h2, h3, h4{
+    font-family: 'Solway', Times,serif;
+}
+
+.container{
+    max-width: 1500px;
+}
+.subnav{
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--primary1);
+    margin: -8px;
+    height: 60px;
+}
+.subnav a{
+    color: var(--white);
+    padding: 13px;
+    margin-right: 28px;
+}
+.mainnav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--primary1);
+    padding: 26px;
+    margin: -8px;
+}
+.mainnav a{
+    color: var(--white);
+}
+.masthead{
+   background-color: whitesmoke;
+   margin: 8px;
+   padding: 12px;
+   width: 100%;
+   margin-left: -8px;
+}
+.times-logo{
+    
+}
+.masthead h1{
+    text-align: center;
+    font-size: 25px;
+}
+.content{
+    margin-top: -18px;
+    margin-right: -8px;
+    margin-left: -8px;
+}
+.content .story{
+   
+}
+.story.lead-story{
+    background-color: 	#DCDCDC;
+}
+h1.story-title{
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    text-align: center;
+        
+    
+}
+.story img{
+    float: left;
+    margin: 0px 2rem 1rem 19px;
+}
+
+.next p{
+    margin-left: 20px;
+   margin-right: 10px;
+   margin-bottom: 30px;
+}
+.story blockquote{
+    quotes: "\201E" "\201D";
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.story blockquote::before{
+    content: open-quote;
+}
+.story blockquote::after{
+    content: close-quote;
+}
+.story p.byline{
+    text-align: center;
+}
+p.byline span.author{
+    
+    font-size: 20.00px;
+}
+p.byline span.pub{
+    font-size: 16.00px;
+}
+.foot{
+    background-color: var(--primary1);
+    text-justify: auto;
+    padding: 15px;
+    width: 100%;
+    margin-left: -12px;
+    
+}
+.foot p{
+    color: antiquewhite;
+    text-align: center;
+}
+
+
+@media (max-width: 1200px){
+    
+    .times-logo{
+        width: 98%;
+        height: 114px;
+    }
+        
+    .lead-story p{
+        margin-left: 12px;
+        margin-right: 10px;
+        margin-bottom: 5px;
+    }
+   
+}
+@media (min-width: 600px) {
+    .times-logo{
+        
+        width:98%;
+    height: max-content;
+}
+}
